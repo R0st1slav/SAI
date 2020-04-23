@@ -14,7 +14,6 @@ def to_byte(dict_of_numbers: dict):
     return byte_dict
 
 
-
 with open('etalon.json', 'r') as file_js:
     data = json.load(file_js)
     numbers = dict(data['numbers'])
