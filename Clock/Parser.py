@@ -1,4 +1,6 @@
 import json
+from collections import Counter
+
 
 def to_byte(dict_of_numbers: dict):
     byte_dict = {k: [] for k in dict_numbers.keys()}
@@ -20,5 +22,7 @@ with open('etalon.json', 'r') as file_js:
     dict_numbers = dict(zip(numbers.keys(), [elem.split('\n') for elem in numbers.values()]))
     byte_dict = to_byte(dict_numbers)
 
+    for elem in dict_numbers['one']:
+        print(elem)
 
 
